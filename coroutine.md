@@ -42,7 +42,7 @@ fiber 又称(纤程), 实际上跟协程是一样的东西不同名字.
 而php的fiber也是比较轻量的, fiber的栈大小是可以动态增长的, 最开始只有4k, 默认最大8m, 可以手动配置stack size.
 
 ----
-随便吐槽一下amphp, amphp的parallel库醒目写着"使用多进程或者线程为php提供真正的并行处理, 无需拓展. 但是实际上你还是得装ext-parallel或者ext-pthreads来支持多线程, 否则纯php只能用多进程来并行.
+随便吐槽一下amphp, amphp的parallel库醒目写着"使用多进程或者线程为php提供真正的并行处理, 无需拓展". 但是实际上你还是得装ext-parallel或者ext-pthreads来支持多线程, 否则纯php只能用多进程来并行.
 颇有标题党的味道(
 
 amphp的非阻塞文件io也是得用libuv/libevent等等拓展, 否则回退到同步或者多进程....没错, 多进程😅
